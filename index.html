@@ -1,109 +1,284 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
+
 <head>
-<title>آموزشگاه تخصصی برنامه نویسی تحلیل داده</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--favicons-->
-<link rel="shortcut icon" href="favicon.ico">
-<!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-<link href="css/style.css" rel="stylesheet" media="screen">
-<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-<style>
-@font-face {
-	font-family: 'JournalRegular';
-	src: url('fonts/journal-webfont.eot');
-	src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/journal-webfont.woff') format('woff'), url('fonts/journal-webfont.ttf') format('truetype'), url('fonts/journal-webfont.svg#JournalRegular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+
+<meta http-equiv="Content-Language" content="fa">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>وب سايت شخصي شما</title>
+
+<meta name="keywords" content="وب سايت شخصي شما">
+
+<meta name="author" content="وب سايت شخصي شما">
+
+<style type="text/css">
+
+html, body
+
+{
+
+   height: 100%;
+
 }
+
+div#space
+
+{
+
+   width: 1px;
+
+   height: 50%;
+
+   margin-bottom: -273px;
+
+   float:left
+
+}
+
+div#container
+
+{
+
+   width: 1140px;
+
+   height: 546px;
+
+   margin: 0 auto;
+
+   position: relative;
+
+   clear: left;
+
+}
+
 </style>
+
+<style type="text/css">
+
+body
+
+{
+
+   margin: 0;
+
+   padding: 0;
+
+   background-color: #C8C8C8;
+
+   background-image: url(images/index_bkgrnd.png);
+
+   color: #000000;
+
+}
+
+</style>
+
+<link rel="stylesheet" href="./vader/jquery.ui.all.css" type="text/css">
+
+<script type="text/javascript" src="./jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="./jquery.ui.core.min.js"></script>
+
+<script type="text/javascript" src="./jquery.ui.widget.min.js"></script>
+
+<script type="text/javascript" src="./jquery.ui.accordion.min.js"></script>
+
+<script type="text/javascript" src="./jquery.effects.core.min.js"></script>
+
+<style type="text/css">
+
+.ui-accordion .ui-accordion-header
+
+{
+
+   font-family: Tahoma;
+
+   font-size: 13px;
+
+   height: 36px;
+
+   font-weight: normal;
+
+   font-style: normal;
+
+}
+
+.ui-accordion .ui-accordion-header a
+
+{
+
+   padding: 10px 10px 10px 30px;
+
+}
+
+.ui-accordion .ui-accordion-header .ui-icon
+
+{
+
+   left: 10px;
+
+}
+
+.ui-accordion .ui-accordion-content
+
+{
+
+   padding: 0 0 0 0;
+
+}
+
+.style1 {
+
+	text-align: center;
+
+}
+
+.style2 {
+
+	text-align: right;
+
+}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function()
+
+{
+
+   var jQueryAccordion1Opts =
+
+   {
+
+      event: 'mouseover',
+
+      animated: 'easeOutBounce',
+
+      header: 'h3',
+
+      fillSpace: 'true'
+
+   };
+
+   $("#jQueryAccordion1_id").accordion(jQueryAccordion1Opts);
+
+});
+
+</script>
+
 </head>
-<body class="page-bg">
-<div class="container">
-  <div class="hero-unit">
-      <h1 class="hed">آموزشگاه تخصصی برنامه نویسی تحلیل داده</h1>
-      <h3 class="hed">میتوانید با بهره مندی از مشاوره رایگان، اطلاعات لازم جهت شرکت در دوره مورد نظر خود را بدست آورید</h3>
-  </div>
-  <div class="social-links">
-    <div class="span9">
-      <ul id="social-icons">
-        <li class="facebook"><a href="#" data-toggle="tooltip" title="فیسبوک">Facebook</a></li>
-        <li class="twitter"><a href="#" data-toggle="tooltip" title="توئیتر">Twitter</a></li>
-        <li class="flickr"><a href="#" data-toggle="tooltip" title="FLICKR">Flickr</a></li>
-        <li class="pinterest"><a href="#" data-toggle="tooltip" title="PINTEREST">Pinterest</a></li>
-        <li class="dribble"><a href="#" data-toggle="tooltip" title="DRIBBLE">Dribble</a></li>
-        <li class="gplus"><a href="#" data-toggle="tooltip" title="GOOGLE PLUS">gplus</a></li>
-        <li class="instagram"><a href="#" data-toggle="tooltip" title="INSTAGRAM">instagram</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="clock">
-    <div class="span6"> <img class="img-clock" src="img/bg-clock.png" alt="clock counter">
-      <div id="countdown">
-          <div class="days"><span id="days"></span> <ins>/</ins> <em>days /</em></div>
-          <div class="hours"><span id="hours"></span> <ins>/</ins> <em>hours /</em></div>
-          <div class="minutes"><span id="minutes"></span> <ins>/</ins> <em>min /</em></div>
-          <div class="seconds"><span id="seconds"></span><em>sec</em> </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="addthis"> 
-  <!-- AddThis Button BEGIN -->
-  <div class="addthis_toolbox addthis_default_style "> <a class="addthis_button_tweet"></a> <a class="addthis_button_facebook_like"></a> </div>
-  <script type="text/javascript" src="../../../s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51402b366dcd4710"></script> 
-  <!-- AddThis Button END --> 
+
+<body>
+
+<div id="space"><br></div>
+
+<div id="container">
+
+<div id="wb_Image1" style="margin:0;padding:0;position:absolute;left:0px;top:480px;width:1139px;height:59px;text-align:left;z-index:5;">
+
+<img src="images/glow-bottom.gif" id="Image1" alt="" border="0" style="width:1139px;height:59px;"></div>
+
+<div id="wb_Shape1" style="margin:0;padding:0;position:absolute;left:268px;top:119px;width:602px;height:376px;text-align:center;z-index:6;">
+
+<img src="images/img0001.gif" id="Shape1" alt="" title="" style="border-width:0;width:602px;height:376px"></div>
+
+<div id="jQueryAccordion1" style="position:absolute;left:274px;top:122px;width:591px;height:369px;z-index:7">
+
+<div id="jQueryAccordion1_id" style="position:absolute;width:591px;height:369px">
+
+<h3 style="display:block" class="style1"><a href="#">وب سايت شخصي شما</a></h3>
+
+<div>
+
+<div id="wb_Text1" style="margin:0;padding:0;position:absolute;left:25px;top:35px;width:545px;height:111px;text-align:right;z-index:0;">
+
+<font style="font-size:13px" color="#F0F0F0" face="Tahoma">نام و نام خانوادگي : وان اسکریپت <br>
+
+سال تولد : 1373<br>
+
+محل تولد : قاین<br>
+
+دانشجو : برنامه نویسی<br>
+
+علاقه مندي ها : برنامه نویسی تحت وب<br>
+
+&nbsp; </font></div>
+
 </div>
 
-<!-- Modal -->
-<div id="subscribe" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-  </div>
-  <div class="modal-body">
-    <div class="form-container">
-      <form class="form-horizontal">
-        <h2>Fill in your 
-          email address 
-          &amp; we'll let you know when we launch!</h2>
-        <div class="control-group">
-          <div class="controls">
-            <input type="text" id="inputName" value="Name" onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;">
-          </div>
-        </div>
-        <div class="control-group">
-          <div class="controls">
-            <input type="text" id="inputEmail" value="Email" onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;">
-          </div>
-        </div>
-        <div class="control-group">
-          <div class="controls">
-            <button type="submit" class="btn">NOTIFY ME</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div id="map_canvas" style="width: 100%; height: 262px;"></div>
-  </div>
+<h3 style="display:block" class="style2"><a href="#">فعاليتهاي من</a></h3>
+
+<div>
+
+<div id="wb_Text2" style="margin:0;padding:0;position:absolute;left:27px;top:36px;width:545px;height:112px;text-align:right;z-index:1;">
+
+<font style="font-size:13px" color="#F0F0F0" face="Tahoma">www.onescript.ir مديريت در سايت<br>
+
+www.rap2rap1.in مديريت در سايت<br>
+
+... و </font></div>
+
 </div>
 
-<!-- Le javascript
-    ================================================== --> 
-<!-- Placed at the end of the document so the pages load faster --> 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap-transition.js"></script> 
-<script src="js/bootstrap-modal.js"></script> 
-<script src="js/bootstrap-tooltip.js"></script> 
-<script type="text/javascript" src="js/jquery.countdown.min.js"></script> 
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
-<script type="text/javascript" src="js/jquery.ui.map.min.js"></script> 
-<script type="text/javascript" src="js/jquery.custom.js"></script>
+<h3 style="display:block" class="style2"><a href="#">زمينه هاي کاري من</a></h3>
+
+<div>
+
+<div id="wb_Text3" style="margin:0;padding:0;position:absolute;left:28px;top:32px;width:545px;height:143px;text-align:right;z-index:3;">
+
+<font style="font-size:13px" color="#F0F0F0" face="Tahoma"> طراحی وبسایت های<br>
+
+شخصی<br>
+
+دانلود<br>
+
+خبری<br>
+
+انجمن های گفتگو<br>
+
+فروشگاه اینترنتی<br>
+
+فروش اینترنتی کارت شارژ<br>
+موزیک<br>
+
+... و <br>
+
+</font></div>
+
+</div>
+
+<h3 style="display:block" class="style2"><a href="#">ارتباط با من</a></h3>
+
+<div>
+
+<div id="wb_Text4" style="margin:0;padding:0;position:absolute;left:26px;top:86px;width:545px;height:79px;text-align:center;z-index:4;">
+
+<font style="font-size:13px" color="#F0F0F0" face="Tahoma"><b>E-MAIL AND CHAT</b> : Ghadery69@yahoo.com<br>
+
+Only email : Ghadery69@yahoo.comcom<br>
+
+Only email : Ghadery69@yahoo.com<br>
+
+<b>MOB </b>: 0912-123-456</font><font style="font-size:13px" color="#000000" face="Arial"><br>
+
+</font></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<center>ویرایش و بهینه شده توسط: <a href="http://www.onescript.ir/" class="nima1"><strong>وان اسکریپت</strong></center>
+
 </body>
+
 </html>
